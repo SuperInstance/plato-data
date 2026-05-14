@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "plato-data"
+version = "1.0.0"
+description = "Data loading for PLATO rooms — CSV, JSONL, PLATO tiles, fleet telemetry"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = ["torch>=2.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
